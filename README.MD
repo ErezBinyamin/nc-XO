@@ -1,7 +1,7 @@
 # nc-XO
 Tic tac toe over netcat
 
-
+<pre>
   a     b     c    
       |     |       
 1  -  |  -  |  -    
@@ -12,3 +12,4 @@ Tic tac toe over netcat
       |     |       
 3  -  |  -  |  -    
       |     |       
+</pre>
