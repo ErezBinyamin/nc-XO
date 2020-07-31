@@ -1,6 +1,12 @@
 #!/bin/bash
-rm -f /tmp/f /tmp/g
-mkfifo /tmp/f
-mkfifo /tmp/g
+rm -f /tmp/in /tmp/out
+mkfifo /tmp/in
+mkfifo /tmp/out
 
-cat /tmp/f | /bin/bash game.sh 2>&1 | tee -a /tmp/g | nc -l ${1:-1234} | tee -a /tmp/f
+cat /tmp/in | /bin/bash game.sh 2>&1 | tee -a /tmp/out | nc -l ${1:-1234} > /tmp/in &
+cat /tmp/out &
+while :
+do
+	read CMD
+	echo $CMD > /tmp/in
+done
