@@ -1,4 +1,6 @@
 #!/bin/bash
-rm -f /tmp/f
+rm -f /tmp/f /tmp/g
 mkfifo /tmp/f
-cat /tmp/f | /bin/bash game.sh 2>&1 | nc -l ${1:-1234} | tee -a /tmp/f
+mkfifo /tmp/g
+
+cat /tmp/f | /bin/bash game.sh 2>&1 | tee -a /tmp/g | nc -l ${1:-1234} | tee -a /tmp/f
