@@ -1,5 +1,5 @@
 # nc-XO
-## The ligtweight framework to any two-player netcat game
+## A ligtweight framework to any two-player netcat game
 
 ```bash
 #server
