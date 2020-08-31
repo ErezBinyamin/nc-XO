@@ -1,15 +1,15 @@
 # nc-XO
-Tic tac toe over netcat
+## The ligtweight framework to any two-player netcat game
 
-<pre>
-  a     b     c    
-      |     |       
-1  -  |  -  |  -    
- _____|_____|_____  
-      |     |      
-2  -  |  -  |  -    
- _____|_____|_____  
-      |     |       
-3  -  |  -  |  -    
-      |     |       
-</pre>
+```bash
+#server
+
+bash server.sh <game.sh> <optional port>
+
+```
+```bash
+#client
+
+nc -l <port>
+
+```
