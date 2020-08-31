@@ -1,5 +1,5 @@
 # nc-XO
-## A ligtweight framework to make any two-player terminal game multiplayer
+### A ligtweight framework to make any two-player terminal game multiplayer
 
 ```bash
 #server
