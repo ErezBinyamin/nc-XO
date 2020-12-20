@@ -1,0 +1,6 @@
+[submodule "games/TicTacToe-Game-in-Bash"]
+	path = games/TicTacToe-Game-in-Bash
+	url = https://github.com/davidhcefx/TicTacToe-Game-in-Bash.git
+[submodule "games/bash2048"]
+	path = games/bash2048
+	url = https://github.com/mydzor/bash2048.git
